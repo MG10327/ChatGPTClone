@@ -85,3 +85,31 @@ body {
         height: 1.75rem;
     }
 }
+
+.lowerSide {
+    padding: 2rem;
+}
+
+.listItems {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.listItemsImg {
+    margin: 1rem;
+    padding-right: 2rem;
+}
+
+.listItems:nth-child(1)>.listItemsImg {
+    margin-right: 0.5rem;
+}
+
+.listItems:nth-child(1)>.listItemsImg {
+    margin-right: 0.5rem;
+}
+
+.listItems:nth-child(1)>.listItemsImg {
+    margin-right: 0.5rem;
+}

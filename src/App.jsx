@@ -26,9 +26,9 @@ const App = () => {
         </div>
 
         <div className="lowerSide">
-          <div className="listItems"><img src={home} alt="Home" className="listItems" />Home</div>
-          <div className="listItems"><img src={saved} alt="Saved" className="listItems" />Saved</div>
-          <div className="listItems"><img src={rocket} alt="Upgrade" className="listItems" />Upgrade to Pro</div>
+          <div className="listItems"><img src={home} alt="Home" className="listItemsImg" />Home</div>
+          <div className="listItems"><img src={saved} alt="Saved" className="listItemsImg" />Saved</div>
+          <div className="listItems"><img src={rocket} alt="Upgrade" className="listItemsImg" />Upgrade to Pro</div>
         </div>
     </div>
 
