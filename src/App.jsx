@@ -39,17 +39,21 @@ const App = () => {
 
       <div className="chats">
         <div className="chat">
-          <img src={userIcon} alt="" />
-          <p className="txt">Example Text</p>
+          <img src={userIcon} alt="" className="userImage" />
+          <p className="txt">Example TextExample TextExample TextExample TextExample TextExample TextExample TextExample TextExample TextExample Text</p>
         </div>
-        <div className="chat">
+        <div className="chat bot">
           <img src={gptImageLogo} alt="" />
-          <p className="txt">Example Text</p>
+          <p className="txt">Example TextExample TextExample TextExample TextExample TextExample TextExample TextExample TextExample TextExample Text</p>
         </div>
       </div>
 
       <div className="chatFooter">
-        <input type="text" placeholder="Send a message..." /><button className="send"><img  src={sendBtn} alt="Send" /></button>
+        <div className="inp">
+          <input type="text" placeholder="Send a message..." /><button className="send"><img  src={sendBtn} alt="Send" /></button>
+        </div>
+        <p>ChatGPT may produce inaccurate information about people, places, or facts. ChatGPT August 20 version </p>
+
       </div>
 
     </div>

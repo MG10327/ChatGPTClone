@@ -24,10 +24,6 @@ body {
     border-right: 1px solid rgb(100, 100, 100);
 }
 
-.main {
-    flex: 9;
-}
-
 .logo {
     margin-right: 1rem;
 }
@@ -109,4 +105,85 @@ body {
 
 .listItems:nth-child(3)>.listItemsImg {
     margin-right: 0.75rem;
+}
+
+.main {
+    min-height: calc(100vh - 14rem);
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 10rem 0 10rem;
+    flex: 9;
+}
+
+.chat {
+
+    img {
+        max-width: 50px;
+    }
+}
+
+.chats {
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    width: 100%;
+    // max-width: 70rem;
+    height: calc(100vh - 17rem);
+    max-width: 110rem;
+
+    .bot {
+        background: rgba(28, 30, 58, 1);
+        width: fit-content;
+        border-radius: 0.5rem;
+    }
+}
+
+.chat {
+    margin: 1rem;
+    padding: 2rem 3rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+
+    img {
+        margin-right: 2rem;
+        border-radius: 0.5rem;
+    }
+}
+
+.chatFooter {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 110rem;
+
+    p {
+        margin: 2rem  0;
+    }
+}
+
+.inp {
+    padding: 0.5rem;
+    background: rgba(28, 30, 58, 1);
+
+    input {
+        background: rgba(28, 30, 58, 1);
+        width: calc(100% - 5rem);
+        outline: none;
+        padding: 1.25rem;
+        color: white;
+        margin-right: 12px;
+        border: none;
+    }
+
+    input, .send {
+    }
+
+    .send {
+        vertical-align: middle;
+    }
+
+
 }
