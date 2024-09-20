@@ -5,6 +5,9 @@ import msgIcon from './assets/message.svg'
 import home from './assets/home.svg'
 import saved from './assets/bookmark.svg'
 import rocket from './assets/rocket.svg'
+import sendBtn from './assets/send.svg'
+import userIcon from './assets/user-icon.png'
+import gptImageLogo from './assets/chatgptLogo.svg'
 
 const App = () => {
   return (
@@ -33,6 +36,21 @@ const App = () => {
     </div>
 
     <div className="main">
+
+      <div className="chats">
+        <div className="chat">
+          <img src={userIcon} alt="" />
+          <p className="txt">Example Text</p>
+        </div>
+        <div className="chat">
+          <img src={gptImageLogo} alt="" />
+          <p className="txt">Example Text</p>
+        </div>
+      </div>
+
+      <div className="chatFooter">
+        <input type="text" placeholder="Send a message..." /><button className="send"><img  src={sendBtn} alt="Send" /></button>
+      </div>
 
     </div>
   </div>
