@@ -1,5 +1,10 @@
 import './App.scss'
 import gptLogo from './assets/chatgpt.svg'
+import addBtn from './assets/add-30.png'
+import msgIcon from './assets/message.svg'
+import home from './assets/home.svg'
+import saved from './assets/bookmark.svg'
+import rocket from './assets/rocket.svg'
 
 const App = () => {
   return (
@@ -12,16 +17,18 @@ const App = () => {
             <span className="brand">ChatGPT</span>
           </div>
 
-          <button className="midBtn"><img src="" alt="" className="addBtn" />New Chat</button>
+          <button className="midBtn"><img src={addBtn} alt="" className="addBtn" />New Chat</button>
 
           <div className="upperSideBottom">
-            <button className="query"><img src="" alt="" />What is Programming?</button>
-            <button className="query"><img src="" alt="" />What is Programming?</button>
+            <button className="query"><img src={msgIcon} alt="Query" />What is Programming?</button>
+            <button className="query"><img src={msgIcon} alt="Query" />How do you use an API?</button>
           </div>
         </div>
 
         <div className="lowerSide">
-
+          <div className="listItems"><img src={home} alt="Home" className="listItems" />Home</div>
+          <div className="listItems"><img src={saved} alt="Saved" className="listItems" />Saved</div>
+          <div className="listItems"><img src={rocket} alt="Upgrade" className="listItems" />Upgrade to Pro</div>
         </div>
     </div>
 
