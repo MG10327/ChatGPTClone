@@ -138,6 +138,10 @@ body {
     }
 }
 
+.chats::-webkit-scrollbar {
+    display: none;
+}
+
 .chat {
     margin: 1rem;
     padding: 2rem 3rem;
@@ -184,6 +188,4 @@ body {
     .send {
         vertical-align: middle;
     }
-
-
 }
