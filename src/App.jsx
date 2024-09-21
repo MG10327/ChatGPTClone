@@ -8,7 +8,7 @@ import rocket from './assets/rocket.svg'
 import sendBtn from './assets/send.svg'
 import userIcon from './assets/user-icon.png'
 import gptImageLogo from './assets/chatgptLogo.svg'
-import {useContext} from 'react'
+import React, {useContext} from 'react'
 import {Context} from './context/context'
 
 const App = () => {
@@ -42,20 +42,21 @@ const App = () => {
 
     <div className="main">
 
+
       <div className="chats">
         <div className="chat">
           <img src={userIcon} alt="" className="userImage" />
-          <p className="txt">Example TextExample TextExample TextExample TextExample TextExample TextExample TextExample TextExample TextExample Text</p>
+          <p className="txt">{recentPrompt}</p>
         </div>
         <div className="chat bot">
           <img src={gptImageLogo} alt="" />
-          <p className="txt">Example TextExample TextExample TextExample TextExample TextExample TextExample TextExample TextExample TextExample Text</p>
+          <p className="txt" dangerouslySetInnerHTML={{__html:resultData}} />
         </div>
       </div>
 
       <div className="chatFooter">
         <div className="inp">
-          <input type="text" onChange={(e)=>setInput(e.target.value)} value={input} placeholder="Send a message..." /><button className="send" ><img  onClick={()=>onSent()} src={sendBtn} alt="Send" /></button>
+          <input type="text" onChange={(e)=>setInput(e.target.value)} value={input} placeholder="Send a message..." /><button className="send" ><img onClick={()=>onSent()} src={sendBtn} alt="Send" /></button>
         </div>
         <p>ChatGPT may produce inaccurate information about people, places, or facts. ChatGPT August 20 version </p>
 

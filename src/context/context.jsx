@@ -16,10 +16,16 @@ const ContextProvider = (props) => {
 
 
     const onSent = async(prompt) => {
-        await run(input)
-    }
 
-    onSent("What is react js")
+        setResultData("") //removes the previous response from the state varialbe
+        setLoading(true)
+        setShowResult(true)
+        setRecentPrompt(input)
+        const response = await run(input)
+        setResultData(response)
+        setLoading(false)
+        setInput("")
+    }
 
     const contextValue = {
         previousPrompts,
@@ -32,7 +38,6 @@ const ContextProvider = (props) => {
         resultData,
         input,
         setInput
-
     }
 
     return(

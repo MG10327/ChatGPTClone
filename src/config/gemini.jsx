@@ -6,8 +6,6 @@
 
 import {GoogleGenerativeAI, HarmCategory, HarmBlockThreshold} from '@google/generative-ai'
 
-
-
     const generationConfig = {
         temperature: 1,
         topP: 0.95,
@@ -42,7 +40,9 @@ import {GoogleGenerativeAI, HarmCategory, HarmBlockThreshold} from '@google/gene
         });
 
         const result = await chatSession.sendMessage(prompt);
-        console.log(result.response.text());
+        const response = result.response
+        console.log(response.text());
+        return response.text()
     }
 
  export default run;
