@@ -10,6 +10,7 @@ import userIcon from './assets/user-icon.png'
 import gptImageLogo from './assets/chatgptLogo.svg'
 
 const App = () => {
+
   return (
     <div className="App">
       <div className="sidebar">
@@ -50,7 +51,7 @@ const App = () => {
 
       <div className="chatFooter">
         <div className="inp">
-          <input type="text" placeholder="Send a message..." /><button className="send"><img  src={sendBtn} alt="Send" /></button>
+          <input type="text"  placeholder="Send a message..." /><button className="send" ><img  src={sendBtn} alt="Send" /></button>
         </div>
         <p>ChatGPT may produce inaccurate information about people, places, or facts. ChatGPT August 20 version </p>
 
