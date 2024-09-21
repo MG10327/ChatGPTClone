@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="sidebar">
+      <div className="sidebar"> 
         <div className="upperSide">
 
           <div className="upperSideTop">
