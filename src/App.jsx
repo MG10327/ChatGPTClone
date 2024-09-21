@@ -50,7 +50,13 @@ const App = () => {
         </div>
         <div className="chat bot">
           <img src={gptImageLogo} alt="" />
-          <p className="txt" dangerouslySetInnerHTML={{__html:resultData}} />
+          {loading ? <div className="loader">
+            <hr />
+            <hr />
+            <hr />
+          </div>
+          : <p className="txt" dangerouslySetInnerHTML={{__html:resultData}} />}
+
         </div>
       </div>
 
