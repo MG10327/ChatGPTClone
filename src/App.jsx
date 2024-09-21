@@ -8,7 +8,7 @@ import rocket from './assets/rocket.svg'
 import sendBtn from './assets/send.svg'
 import userIcon from './assets/user-icon.png'
 import gptImageLogo from './assets/chatgptLogo.svg'
-import useContext from 'react'
+import {useContext} from 'react'
 import {Context} from './context/context'
 
 const App = () => {
@@ -55,7 +55,7 @@ const App = () => {
 
       <div className="chatFooter">
         <div className="inp">
-          <input type="text"  placeholder="Send a message..." /><button className="send" ><img  src={sendBtn} alt="Send" /></button>
+          <input type="text" onChange={(e)=>setInput(e.target.value)} value={input} placeholder="Send a message..." /><button className="send" ><img  onClick={()=>onSent()} src={sendBtn} alt="Send" /></button>
         </div>
         <p>ChatGPT may produce inaccurate information about people, places, or facts. ChatGPT August 20 version </p>
 
