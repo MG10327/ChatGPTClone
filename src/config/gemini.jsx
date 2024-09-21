@@ -4,9 +4,7 @@
  * $ npm install @google/generative-ai
  */
 
-import GoogleGenerativeAI from '@google/generative-ai'
-import HarmCategory from '@google/generative-ai'
-import HarmBlockThreshold from '@google/generative-ai'
+import {GoogleGenerativeAI, HarmCategory, HarmBlockThreshold} from '@google/generative-ai'
 
 
   const apiKey = import.meta.env.GEMINI_API_KEY;

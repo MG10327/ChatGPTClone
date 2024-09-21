@@ -8,8 +8,12 @@ import rocket from './assets/rocket.svg'
 import sendBtn from './assets/send.svg'
 import userIcon from './assets/user-icon.png'
 import gptImageLogo from './assets/chatgptLogo.svg'
+import useContext from 'react'
+import {Context} from './context/context'
 
 const App = () => {
+
+  const {onSent, recentPrompt, showResult, loading, resultData, setInput, input} = useContext(Context)
 
   return (
     <div className="App">
