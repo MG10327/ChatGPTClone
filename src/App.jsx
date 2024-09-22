@@ -26,12 +26,12 @@ const App = () => {
           </div>
 
           <button className="midBtn"><img src={addBtn} alt="" className="addBtn" />New Chat</button>
-{/* 
-          <div className="upperSideBottom">
+
+          {/* <div className="upperSideBottom">
             <button className="query"><img src={msgIcon} alt="Query" />What is Programming?</button>
             <button className="query"><img src={msgIcon} alt="Query" />How do you use an API?</button>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
 
         <div className="lowerSide">
           <div className="listItems"><img src={home} alt="Home" className="listItemsImg" />Home</div>
